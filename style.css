@@ -78,11 +78,17 @@ audio {
 #download {
     display: block;
     background-color: #E09622;
+    text-decoration: none;
     color:#110e16;
     font-weight: bold;
     padding: 5px 5px;
     margin: 10px auto 20px;
     border: double #110e16 5px;
+}
+#download:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #b97200;
 }
 #music {
     margin-bottom: 20px;
@@ -113,4 +119,7 @@ audio {
     color: brown;
     bottom: 0%;
     margin-top: 30px;
+}
+a {
+    text-decoration: none;
 }
