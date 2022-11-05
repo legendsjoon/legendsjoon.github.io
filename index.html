@@ -24,13 +24,21 @@
 		</ul>
 	</div>
 	<div>
-		<h3>WANNA ASK ME SOMR QUESTION?</h3>
+		<h3>WANNA ASK ME SOME QUESTION?</h3>
 		<form>
-			<input type="text" id="yq" placeholder="Your question">
+			<input type="text" id="yq" placeholder="Your question" onfocus="this.value=''" >
 			<input type="button" id="sendbutton" onclick="sendfunction()" value="SEND">
 			<p id="result"></p>
 			<input type="button" id="rickroll" onclick="clickfunction()" value="SPECIAL BUTTON">
 			</input>
+		</form>
+	</div>
+	<div>
+		<h3>A.I</h3>
+		<form>
+			<input type="text" id="calculator" placeholder="Enter your age(only number)" onfocus="this.value=''" >
+			<input type="button" id="calculate" value="Calculate" onclick="calfunction()">
+			<p id="age"></p>
 		</form>
 	</div>
 	<div>
@@ -46,9 +54,9 @@
 		</div>	
 		<div id="genshin"></div>
 			<a href="https://genshin.hoyoverse.com/en/download">
-				<img  id="genshinimg" src="docs/assets/tignari.jpg">
+				<img  id="genshinimg" src="docs/assets/nahida.webp">
 			</a>
-			<p id="genshintext">Btw I just got Tighnari :D</p>
+			<p id="genshintext">Btw I just got Nadiha with 60 pulls :D</p>
 			<p id="genshinnote">Click the photo to download download the game</p>
 		</div>
 	</div>
@@ -65,13 +73,17 @@
 	</footer>
 	<script>
 		function sendfunction() {
-			var x = document.getElementById("sendbutton");
 			document.getElementById("result").innerHTML = "Your question has been submitted";
-			if (0 == document.getElementById("yq").value.length) document.getElementsById("result").innerHTML = "You haven't typed anything"
+			if (0 == document.getElementById("yq").value.length) document.getElementById("result").innerHTML = "You haven't typed anything"
 		}
 		function clickfunction() {
-			var x = document.getElementById("rickroll")
 				(window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+		}
+		function calfunction() {
+			var x = document.getElementById("calculator").value;
+			document.getElementById("age").innerHTML = "Your age is " + x;
+			if (isNaN(x)) document.getElementById("age").innerHTML = "WTF is that?";
+			if (0 == document.getElementById("calculator").value.length) document.getElementById("age").innerHTML = "You haven't typed anything"
 		}
 	</script>
 </body>

@@ -24,6 +24,7 @@ ul {
     margin: 10px auto;
 }
 input[type=text] {
+    color:#E09622;
     display: block;
     width: 40%;
     padding: 5px 6px;
@@ -64,6 +65,11 @@ input[type=button] {
     text-align: center;
     margin: 5px 0px 10px;
 }
+#age {
+    color:#E09622;
+    text-align: center;
+    margin: 5px 0px 10px;
+}
 p.OST {
     color: #E09622;
     font-weight: bold;
@@ -95,7 +101,7 @@ audio {
     border-bottom: dotted #226CE0 2px;
 }
 #genshinimg {
-    width: 50%;
+    width: 80%;
     height: auto;
     display: block;
     margin: auto auto ;
