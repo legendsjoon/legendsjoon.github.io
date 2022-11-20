@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bio</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
 </head>
@@ -26,7 +27,7 @@
 	<div>
 		<h3>WANNA ASK ME SOME QUESTION?</h3>
 		<form>
-			<input type="text" id="yq" placeholder="Your question" onfocus="this.value=''" >
+			<input type="text" id="yq" placeholder="Your question" onfocus="this.value=''">
 			<input type="button" id="sendbutton" onclick="sendfunction()" value="SEND">
 			<p id="result"></p>
 			<input type="button" id="rickroll" onclick="clickfunction()" value="SPECIAL BUTTON">
@@ -36,7 +37,7 @@
 	<div>
 		<h3>A.I</h3>
 		<form>
-			<input type="text" id="calculator" placeholder="Enter your age(only number)" onfocus="this.value=''" >
+			<input type="text" id="calculator" placeholder="Enter your age(only number)" onfocus="this.value=''">
 			<input type="button" id="calculate" value="Calculate" onclick="calfunction()">
 			<p id="age"></p>
 		</form>
@@ -44,32 +45,31 @@
 	<div>
 		<h3>OTHER</h3>
 		<div id="music">
-			<p class="OST">MY FAVORITE OST</p>
+			<p class="musics">MUSIC</p>
 			<audio controls>
 				<source src="docs/assets/music.mp3" type="audio/mpeg">
 			</audio>
 			<a href="docs/assets/music.mp3" download="music.mp3">
-				<input type="button" id="download" value="CLICK TO DOWNLOAD THIS OST">
+				<input type="button" id="download" value="DOWNLOAD MUSIC">
 			</a>
-		</div>	
-		<div id="genshin"></div>
-			<a href="https://genshin.hoyoverse.com/en/download">
-				<img  id="genshinimg" src="docs/assets/nahida.webp">
-			</a>
-			<p id="genshintext">Btw I just got Nadiha with 60 pulls :D</p>
-			<p id="genshinnote">Click the photo to download download the game</p>
 		</div>
+		<div id="wallpaper"></div>
+		<a href="docs/assets/wallpaper.jpg" download="wallpaper.jpg">
+			<img id="img" src="docs/assets/wallpaper.webp">
+		</a>
+		<p id="destext">Btw here is an aurora wallpaper :D</p>
+		<p id="note">Click the wallpaper to download</p>
 	</div>
 	<footer>
 		<div>
 			<h3>CONTACT ME</h3>
-				<ul>
-					<li>Facebook: <a href="https://fb.com/ntp2005" style="color:#4bfae3">Ngàn Thành Phú</a></li>
-					<li>Email: <a href="mailto:nhocjoon123@gmail.com" style="color:#4bfae3">nhocjoon123@gmail.com</a></li>
-					<li>Github: <a href="https://github.com/legendsjoon" style="color:#4bfae3">legendsjoon</a></li>
-				</ul>
+			<ul>
+				<li>Facebook: <a href="https://fb.com/ntphu2005" style="color:#4bfae3">Ngàn Thành Phú</a></li>
+				<li>Email: <a href="mailto:nhocjoon123@gmail.com" style="color:#4bfae3">nhocjoon123@gmail.com</a></li>
+				<li>Github: <a href="https://github.com/legendsjoon" style="color:#4bfae3">legendsjoon</a></li>
+			</ul>
 		</div>
-	<p id="ending">This website is made just for fun!</p>
+		<p id="ending">This website is made just for fun!</p>
 	</footer>
 	<script>
 		function sendfunction() {
@@ -77,14 +77,15 @@
 			if (0 == document.getElementById("yq").value.length) document.getElementById("result").innerHTML = "You haven't typed anything"
 		}
 		function clickfunction() {
-				(window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+			(window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 		}
 		function calfunction() {
 			var x = document.getElementById("calculator").value;
 			document.getElementById("age").innerHTML = "Your age is " + x;
-			if (isNaN(x)) document.getElementById("age").innerHTML = "WTF is that?";
+			if (isNaN(x)) document.getElementById("age").innerHTML = "That is not a number!";
 			if (0 == document.getElementById("calculator").value.length) document.getElementById("age").innerHTML = "You haven't typed anything"
 		}
 	</script>
 </body>
+
 </html>

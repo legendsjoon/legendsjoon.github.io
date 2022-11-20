@@ -1,30 +1,38 @@
 h1 {
-    color: #226CE0;
+    color: #110e16;
+    background-color: #E09622;
+    border-radius: 20px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    border: double #226CE0 3px;
+    border: double #110e16 2px;
     margin: 50px 0px 70px;
 }
+
 body {
-    background: #1B1725;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("docs/assets/background.webp") fixed center no-repeat;
     font-family: "Prompt", sans-serif
 }
+
 h3 {
+    color: #110e16;
+    background-color: #E09622;
+    border-radius: 20px;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom:auto;
-    color:#226CE0;
-    border: double #226CE0 3px;
+    margin-bottom: auto;
+    border: double #110e16 2px;
 }
+
 ul {
     color: #E09622;
     display: table;
     margin: 10px auto;
 }
+
 input[type=text] {
-    color:#E09622;
+    color: #E09622;
     display: block;
     width: 40%;
     padding: 5px 6px;
@@ -34,25 +42,29 @@ input[type=text] {
     background: #1B1725;
     transition: width 0.4s ease-in-out;
 }
+
 input[type=text]:focus {
     width: 100%;
     background-color: #110e16;
     border: solid #E09622 3px;
-    color:#E09622;
+    color: #E09622;
 }
+
 input[type=button] {
     display: block;
     background-color: #E09622;
-    color:#110e16;
+    color: #110e16;
+    border-radius: 20px;
     font-weight: bold;
     padding: 10px 40px;
     margin: 10px auto 10px;
     border: double #110e16 5px;
 }
+
 #rickroll {
-    background-color:#E09622;
+    background-color: #E09622;
     display: block;
-    color:#110e16;
+    color: #110e16;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -60,64 +72,75 @@ input[type=button] {
     margin: 10px auto 0px;
     border: double 5px #110e16;
 }
+
 #result {
-    color:#E09622;
+    color: #E09622;
     text-align: center;
     margin: 5px 0px 10px;
 }
+
 #age {
-    color:#E09622;
+    color: #E09622;
     text-align: center;
     margin: 5px 0px 10px;
 }
-p.OST {
+
+p.musics {
     color: #E09622;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     margin: 10px auto;
 }
+
 audio {
     display: block;
     margin: 10px auto;
 }
+
 #download {
     display: block;
     background-color: #E09622;
     text-decoration: none;
-    color:#110e16;
+    color: #110e16;
     font-weight: bold;
     padding: 5px 5px;
     margin: 10px auto 20px;
     border: double #110e16 5px;
 }
+
 #download:hover {
     text-decoration: none;
     color: #000000;
     background-color: #b97200;
 }
+
 #music {
     margin-bottom: 20px;
-    border-bottom: dotted #226CE0 2px;
+    border-bottom: dotted #E09622 2px;
 }
-#genshinimg {
+
+#img {
     width: 85%;
     height: auto;
     display: block;
-    margin: auto auto ;
+    margin: auto auto;
 }
-#genshintext {
+
+#destext {
     color: #E09622;
     display: table;
     margin: 10px auto;
 }
-#genshinnote {
+
+#note {
     font-size: 10px;
     font-style: italic;
     text-align: center;
     color: brown;
     margin: 10px auto;
 }
+
 #ending {
     font-size: 10px;
     font-style: italic;
@@ -126,6 +149,7 @@ audio {
     bottom: 0%;
     margin-top: 30px;
 }
+
 a {
     text-decoration: none;
 }
