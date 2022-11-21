@@ -1,17 +1,16 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("docs/assets/background.webp") fixed center no-repeat;
+    font-family: "Prompt", sans-serif;
+}
+
 h1 {
     color: #110e16;
     background-color: #E09622;
     border-radius: 20px;
+    text-align: center;
     font-size: 60px;
     font-weight: bold;
-    text-align: center;
-    border: double #110e16 2px;
     margin: 50px 0px 70px;
-}
-
-body {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("docs/assets/background.webp") fixed center no-repeat;
-    font-family: "Prompt", sans-serif
 }
 
 h3 {
@@ -22,18 +21,17 @@ h3 {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: auto;
-    border: double #110e16 2px;
 }
 
 ul {
-    color: #E09622;
     display: table;
+    color: #E09622;
     margin: 10px auto;
 }
 
 input[type=text] {
-    color: #E09622;
     display: block;
+    color: #E09622;
     width: 40%;
     padding: 5px 6px;
     margin: 10px auto 0px;
@@ -44,33 +42,27 @@ input[type=text] {
 }
 
 input[type=text]:focus {
+    color: #E09622;
     width: 100%;
     background-color: #110e16;
     border: solid #E09622 3px;
-    color: #E09622;
 }
 
 input[type=button] {
     display: block;
-    background-color: #E09622;
-    color: #110e16;
+    background-color: #8c00ffb2;
+    color: #ffffff;
     border-radius: 20px;
     font-weight: bold;
     padding: 10px 40px;
     margin: 10px auto 10px;
-    border: double #110e16 5px;
+    border: hidden;
 }
 
-#rickroll {
-    background-color: #E09622;
-    display: block;
-    color: #110e16;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 60px;
-    margin: 10px auto 0px;
-    border: double 5px #110e16;
+input[type=button]:hover {
+    text-decoration: none;
+    color: #fdfdfd;
+    background-color: #29003b;
 }
 
 #result {
@@ -98,23 +90,6 @@ audio {
     margin: 10px auto;
 }
 
-#download {
-    display: block;
-    background-color: #E09622;
-    text-decoration: none;
-    color: #110e16;
-    font-weight: bold;
-    padding: 5px 5px;
-    margin: 10px auto 20px;
-    border: double #110e16 5px;
-}
-
-#download:hover {
-    text-decoration: none;
-    color: #000000;
-    background-color: #b97200;
-}
-
 #music {
     margin-bottom: 20px;
     border-bottom: dotted #E09622 2px;
@@ -139,6 +114,16 @@ audio {
     text-align: center;
     color: brown;
     margin: 10px auto;
+    padding-bottom: 20px;
+    border-bottom: dotted #E09622 2px;
+}
+
+table,th,td {
+    color:#E09622;
+    border: 1px solid #E09622;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px auto;
 }
 
 #ending {
@@ -152,4 +137,5 @@ audio {
 
 a {
     text-decoration: none;
+    color:#4bfae3;
 }
