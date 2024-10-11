@@ -11,14 +11,13 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0;
     align-self: center;
     border: 1px solid rgb(150, 150, 150);
     border-radius: 10px;
     min-height: 580px;
-    width: 50%;
     max-width: 340px;
-    padding: 40px;
+    padding: 30px;
 }
 
 .container>div {
