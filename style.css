@@ -1,141 +1,190 @@
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("docs/assets/background.webp") fixed center no-repeat;
-    font-family: "Prompt", sans-serif;
+    height: 100vh;
+    color: rgb(150, 150, 150)
 }
 
-h1 {
-    color: #110e16;
-    background-color: #E09622;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 60px;
-    font-weight: bold;
-    margin: 50px 0px 70px;
+.container-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-h3 {
-    color: #110e16;
-    background-color: #E09622;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: auto;
+.container {
+    margin: 0 auto;
+    align-self: center;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    min-height: 580px;
+    width: 50%;
+    max-width: 340px;
+    padding: 40px;
 }
 
-ul {
-    display: table;
-    color: #E09622;
-    margin: 10px auto;
-}
-
-input[type=text] {
-    display: block;
-    color: #E09622;
-    width: 40%;
-    padding: 5px 6px;
-    margin: 10px auto 0px;
-    box-sizing: border-box;
-    border: solid #E09622 2px;
-    background: #1B1725;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    color: #E09622;
+.container>div {
     width: 100%;
-    background-color: #110e16;
-    border: solid #E09622 3px;
 }
 
-input[type=button] {
-    display: block;
-    background-color: #8c00ffb2;
-    color: #ffffff;
-    border-radius: 20px;
-    font-weight: bold;
-    padding: 10px 40px;
-    margin: 10px auto 10px;
-    border: hidden;
-}
-
-input[type=button]:hover {
-    text-decoration: none;
-    color: #fdfdfd;
-    background-color: #29003b;
-}
-
-#result {
-    color: #E09622;
+.header{
     text-align: center;
-    margin: 5px 0px 10px;
 }
 
-#age {
-    color: #E09622;
-    text-align: center;
-    margin: 5px 0px 10px;
+.welcome-title {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 0px
 }
 
-p.musics {
-    color: #E09622;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    margin: 10px auto;
+.welcome-text {
+    margin: 0px auto 20px;
 }
 
-audio {
-    display: block;
-    margin: 10px auto;
+#email {
+    width: 100%;
 }
 
-#music {
+.password-input,
+.password-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#password {
+    width: 88%;
+}
+
+.show-password {
+    width: 12%;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.show-password:hover {
+    cursor: pointer;
+}
+
+.show-password img{
+    width:50%;
+    margin: auto;
+}
+
+#email,
+#password {
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    padding: 10px;
     margin-bottom: 20px;
-    border-bottom: dotted #E09622 2px;
+    height: 40px;
+    box-sizing: border-box;
 }
 
-#img {
-    width: 85%;
-    height: auto;
-    display: block;
-    margin: auto auto;
-}
-
-#destext {
-    color: #E09622;
-    display: table;
-    margin: 10px auto;
-}
-
-#note {
-    font-size: 10px;
-    font-style: italic;
-    text-align: center;
-    color: brown;
-    margin: 10px auto;
-    padding-bottom: 20px;
-    border-bottom: dotted #E09622 2px;
-}
-
-table,th,td {
-    color:#E09622;
-    border: 1px solid #E09622;
-    border-collapse: collapse;
-    text-align: center;
-    margin: 20px auto;
-}
-
-#ending {
-    font-size: 10px;
-    font-style: italic;
-    text-align: center;
-    color: brown;
-    bottom: 0%;
-    margin-top: 30px;
+span{
+    color:red;
 }
 
 a {
     text-decoration: none;
-    color:#4bfae3;
+    color: rgb(150, 150, 150);
+    transition: 0.3s;
+}
+
+a:hover{
+    color: rgb(70, 101, 219);
+    cursor: pointer;
+}
+
+#remember {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+label[for="remember"] {
+    font-size: 1.1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(7, 85, 204);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: 0px 2px 4px rgb(161, 161, 161);
+    transition: 0.3s;
+}
+
+.login-btn:hover{
+    background-color: rgb(57, 107, 206);
+    cursor: pointer;
+}
+
+.register>a,
+.register {
+    font-size: 1.1em;
+}
+
+.divider {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divider>hr {
+    width: 45%;
+}
+
+.divider>p {
+    font-size: 15px;
+}
+
+.third-party-login {
+    display: flex;
+    justify-content: center;
+}
+
+.third-party-login>div{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+.google{
+    background-color: rgb(250, 226, 223);
+    transition: 0.3s;
+}
+
+.google:hover{
+    background-color: rgb(247, 212, 207);
+    cursor: pointer;
+}
+
+.linkedin{
+    background-color: rgb(214, 233, 243);
+    transition: 0.3s;
+}
+
+.linkedin:hover{
+    background-color: rgb(194, 222, 237);
+    cursor: pointer;
+}
+
+.third-party-login img{
+    width: 40px;
+    height: 40px;
 }

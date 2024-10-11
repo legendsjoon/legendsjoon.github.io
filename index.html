@@ -1,92 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bio</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập | Medverse Platform</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div>
-		<h1><b>PROFILE</b></h1>
-	</div>
-	<div>
-		<h3>MY INFORMATION</h3>
-		<ul>
-			<li><b>Name:</b> Ngàn Thành Phú</li>
-			<li><b>Age:</b> 17</li>
-			<li><b>Gender:</b> Male</li>
-			<li><b>Hobby:</b> *secret*</li>
-			<li><b>Address:</b> I don't want to public my address :D</li>
-		</ul>
-	</div>
-	<div>
-		<h3>WANNA ASK ME SOME QUESTION?</h3>
-		<form>
-			<input type="text" id="yq" placeholder="Your question" onfocus="this.value=''">
-			<input type="button" id="sendbutton" onclick="sendfunction()" value="SEND">
-			<p id="result"></p>
-			<input type="button" id="rickroll" onclick="clickfunction()" value="SPECIAL BUTTON">
-			</input>
-		</form>
-	</div>
-	<div>
-		<h3>A.I</h3>
-		<form>
-			<input type="text" id="calculator" placeholder="Enter your age(only number)" onfocus="this.value=''">
-			<input type="button" id="calculate" value="CALCULATE" onclick="calfunction()">
-			<p id="age"></p>
-		</form>
-	</div>
-	<div>
-		<h3>OTHER</h3>
-		<div id="music">
-			<p class="musics">MUSIC</p>
-			<audio controls>
-				<source src="docs/assets/music.mp3" type="audio/mpeg">
-			</audio>
-			<a href="docs/assets/music.mp3" download>
-				<input type="button" id="download" value="DOWNLOAD MUSIC">
-			</a>
-			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FpVJ7HpZInE2GvhVE2TwT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-		</div>
-		<div id="wallpaper"></div>
-		<a href="docs/assets/wallpaper.jpg" download>
-			<img id="img" src="docs/assets/wallpaper.webp">
-		</a>
-		<p id="destext">Btw here is an aurora wallpaper :D</p>
-		<p id="note">Click the wallpaper to download</p>
-	</div>
-	<footer>
-		<div>
-			<h3>CONTACT ME</h3>
-			<ul>
-				<li>Facebook: <a href="https://fb.com/ntphu2005" style="color:#4bfae3">Ngàn Thành Phú</a></li>
-				<li>Email: <a href="mailto:nhocjoon123@gmail.com" style="color:#4bfae3">nhocjoon123@gmail.com</a></li>
-				<li>Github: <a href="https://github.com/legendsjoon" style="color:#4bfae3">legendsjoon</a></li>
-			</ul>
-		</div>
-		<p id="ending">This website is made just for fun!</p>
-	</footer>
-	<script>
-		function sendfunction() {
-			document.getElementById("result").innerHTML = "Your question has been submitted";
-			if (0 == document.getElementById("yq").value.length) document.getElementById("result").innerHTML = "You haven't typed anything"
-		}
-		function clickfunction() {
-			(window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-		}
-		function calfunction() {
-			var x = document.getElementById("calculator").value;
-			document.getElementById("age").innerHTML = "Your age is " + x;
-			if (isNaN(x)) document.getElementById("age").innerHTML = "That is not a number!";
-			if (0 == document.getElementById("calculator").value.length) document.getElementById("age").innerHTML = "You haven't typed anything"
-		}
-	</script>
+    <div class="container-l">
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="Images/header.png" alt="">
+            </div>
+            <div class="welcome-msg">
+                <h4 class="welcome-title">Welcome to Medverse! 👋</h4>
+                <p class="welcome-text">Đăng nhập bằng tài khoản của bạn để vào Medverse.</p>
+            </div>
+            <div class="login-section">
+                <div class="email-section">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="password-section">
+                    <div class="password-title">
+                        <label for="password">Mật khẩu <span>*</span></label>
+                        <a href="http://">Quên mật khẩu?</a>
+                    </div>
+                    <div class="password-input">
+                        <input type="password" name="password" id="password">
+                        <div class="show-password">
+                            <img src="Images/eye.png" alt="" id="eye">
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-section">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Ghi nhớ đăng nhập</label>
+                    <button class="login-btn">Đăng nhập</button>
+                </div>
+                <div class="register">
+                    <p>Bạn chưa có tài khoản Medverse?
+                        <a href="http://">Tạo tài khoản</a>
+                    </p>
+                </div>
+                <div class="divider">
+                    <hr class="line-before">
+                    <p class="or">or</p>
+                    <hr class="line-after">
+                </div>
+                <div class="third-party-login">
+                    <div class="google">
+                        <img src="Images/google.png" alt="">
+                    </div>
+                    <div class="linkedin">
+                        <img src="Images/linkedin.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
