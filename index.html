@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập | Medverse Platform</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="container-l">
+    <form class="container-l">
         <div class="container">
             <div class="header">
                 <img class="logo" src="Images/header.png" alt="">
@@ -31,18 +33,18 @@
                     <div class="password-input">
                         <input type="password" name="password" id="password">
                         <div class="show-password">
-                            <img src="Images/eye.png" alt="" id="eye">
+                            <img src="Images/show.png" alt="" id="show-password">
                         </div>
                     </div>
                 </div>
                 <div class="confirm-section">
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember">Ghi nhớ đăng nhập</label>
-                    <button class="login-btn">Đăng nhập</button>
+                    <input type="submit" class="login-btn" value="Đăng nhập">
                 </div>
                 <div class="register">
                     <p>Bạn chưa có tài khoản Medverse?
-                        <a href="http://">Tạo tài khoản</a>
+                        <a href="register/register.html">Tạo tài khoản</a>
                     </p>
                 </div>
                 <div class="divider">
@@ -60,7 +62,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>

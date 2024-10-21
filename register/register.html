@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký | Medverse Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form class="container-l">
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="../Images/header.png" alt="">
+            </div>
+            <div class="welcome-msg">
+                <h4 class="welcome-title">Welcome to Medverse! 👋</h4>
+                <p class="welcome-text">Nhập thông tin của bạn để tạo tài khoản Medverse</p>
+            </div>
+            <div class="register-section">
+                <div class="fname">
+                    <label for="fname">Tên <span>*</span></label>
+                    <input type="text" name="fname" id="fname">
+                    <p id="check-fname"></p>
+                </div>
+                <div class="lname">
+                    <label for="lname">Họ và tên lót <span>*</span></label>
+                    <input type="text" name="lname" id="lname">
+                    <p id="check-lname"></p>
+                </div>
+                <div class="email">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" name="email" id="email">
+                    <p id="check-email"></p>
+                </div>
+                <div class="username">
+                    <label for="username">Tên tài khoản <span>*</span></label>
+                    <input type="text" name="username" id="username">
+                    <p id="notice">Tên tài khoản chỉ chấp nhận chữ thường và số, phải viết liền không dấu</p>
+                    <p id="check-username"></p>
+                </div>
+                <div class="phone-number">
+                    <label for="phone-number">Số điện thoại</label>
+                    <input type="text" name="phone-number" id="phone-number">
+                    <p id="check-phone-number"></p>
+                </div>
+                <div class="container-bdate-gender">
+                    <div class="birthday">
+                        <label for="birthday">Ngày sinh <span>*</span></label>
+                        <input type="date" name="birthday" id="birthday">
+                        <p id="check-birthday"></p>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Giới tính <span>*</span></label>
+                        <select name="gender" id="gender">
+                            <option value="" disabled selected hidden>Chọn giới tính</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                        <p id="check-gender"></p>
+                    </div>
+                </div>
+                <div class="container-address">
+                    <div class="country">
+                        <label for="country">Quốc gia <span>*</span></label>
+                        <select name="country" id="country">
+                            <option value="" disabled selected hidden>Chọn quốc gia</option>
+                            <option value="VN">Việt Nam</option>
+                        </select>
+                        <p id="check-country"></p>
+                    </div>
+                    <div class="province">
+                        <label for="province">Tỉnh thành <span>*</span></label>
+                        <select name="province" id="province" disabled>
+                            <option value="" disabled selected hidden>Chọn tỉnh thành</option>
+                            <option value="HaNoi">Hà Nội</option>
+                            <option value="HaGiang">Hà Giang</option>
+                            <option value="CaoBang">Cao Bằng</option>
+                            <option value="BacKan">Bắc Kạn</option>
+                            <option value="TuyenQuang">Tuyên Quang</option>
+                        </select>
+                        <p id="check-province"></p>
+                    </div>
+                </div>
+                <div class="container-password">
+                    <div class="password">
+                        <label for="password">Mật khẩu <span>*</span></label>
+                        <div class="password-input">
+                            <input type="password" name="password" id="password">
+                            <div class="show-password">
+                                <img src="../Images/show.png" alt="" id="show-password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-password">
+                        <label for="confirm-password">Xác nhận mật khẩu <span>*</span></label>
+                        <div class="password-input">
+                            <input type="password" name="confirm-password" id="confirm-password">
+                            <div class="show-password">
+                                <img src="../Images/show.png" alt="" id="show-password">
+                            </div>
+                        </div>
+                    </div>
+                    <p id="check-password"></p>
+                    <p id="check-confirm-password"></p>
+                </div>
+                <div class="register-btn">
+                    <input type="submit" value="Đăng ký" id="register-btn" class="hover">
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
