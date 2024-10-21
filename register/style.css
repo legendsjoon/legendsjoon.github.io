@@ -81,8 +81,8 @@ input {
     color: rgb(150, 150, 150);
 }
 
-.birthday>input:invalid {
-    color: transparent
+.birthday>input:required:invalid {
+    color: transparent;
 }
 
 .birthday>input{
